@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project>
-	
-	<meta title="TestApp" package="com.example.testapp" version="1.0.0" company="Company Name" />
-	<app main="Main" path="Export" file="TestApp" />
-	
-	<source path="Source" />
-	
-	<haxelib name="openfl" />
-	
-	<assets path="Assets" rename="assets" exclude="openfl.svg" />
-	<icon path="Assets/openfl.svg" />
-	
+ 
+ <meta title="TestApp" package="com.example.testapp" version="1.0.0" company="Company Name" />
+ <app main="Main" path="Export" file="TestApp" />
+ 
+ <source path="Source" />
+ 
+ <haxelib name="openfl" />
+ <haxelib name="swf" />
+ 
+ <assets path="Assets" rename="assets" exclude="openfl.svg" />
+ <icon path="Assets/openfl.svg" />
+ <library path="Assets/walk.swf" />
+ <set name="ANDROID_INSTALL_LOCATION" value="internalOnly" if="android"/>
 </project>
